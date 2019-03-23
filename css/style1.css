@@ -1,0 +1,55 @@
+/*for transforms*/
+
+body, html{
+	margin: 0;
+	height: 100%;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#page{
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#header{
+	background-color: #0076B6;
+	width: 100%;
+	height: 20%;
+}
+
+#header h1{
+	margin: 0;
+	padding: 45px 0 0 25px;
+	color: #fff;
+	font-size: 4em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.element {
+  display: inline-block;
+  background-color: #ffa500;
+  height: 200px;
+  width: 200px;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: roll 5s infinite;
+  transform: rotate(30deg);
+  opacity: .7;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+
+

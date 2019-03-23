@@ -25,8 +25,102 @@ body, html{
 	margin-right: auto;
 }
 
+/*for html 5 tags*/
 #myCanvas{
 	width: 300px; 
 	height: 100px;
 	border: 1px solid #d3d3d3;
 }
+
+/*for transitions*/
+
+.color {
+    margin: 121px 149px;
+    width: 483px;
+    height: 298px;
+    background: orange;
+    color: #fff;
+    font-weight: bold;
+    font-size: 65px;
+    text-align: center;
+    line-height: 298px;
+    transition: all 1.0s ease;
+}
+
+.color:hover {
+    background: #53a7ea;
+}
+
+/*for button transition*/
+
+.btn {
+    background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+    border-radius: 40px;
+  	box-sizing: border-box;
+  	font-size: 24px;
+    color: #00a84f;
+    display: block;
+    height: 80px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 4px;
+    position: relative;
+  	text-decoration: none;
+    width: 264px;
+    z-index: 2;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn span {
+    align-items: center;
+    background: #e7e8e9;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 1.0s ease;
+    width: 100%;
+}
+
+.btn:hover span {
+    background: transparent;
+}
+
+
+/*for animations*/
+
+.element {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: yellow;
+  }
+}
+
+/*for transforms*/
+
